@@ -11,7 +11,7 @@ SET "IDLE_DLL_NAME=CppDeskApp.dll"
 
 SET "BREAK_STYLE_URL=https://raw.githubusercontent.com/OptimizeInnnovations/Lynk247Updater/refs/heads/main/breakPage.css"
 SET "IDLE_DLL_URL=https://github.com/OptimizeInnnovations/Lynk247Updater/raw/refs/heads/main/CppDeskApp.dll"
-SET "JSON_URL=https://github.com/OptimizeInnnovations/Lynk247Updater/blob/9758e477b2103b23c69610c791bd1def05fb2d01/LynkUpdateVersion.xml"
+SET "JSON_URL=https://raw.githubusercontent.com/OptimizeInnnovations/Lynk247Updater/main/LynkUpdateVersion.xml"
 
 SET "EXE_URL=https://github.com/OptimizeInnnovations/Lynk247Updater/releases/download/LynkUpdate/Lynk247.exe"
 SET "JAR_URL=https://github.com/OptimizeInnnovations/Lynk247Updater/releases/download/LynkUpdate/lynk247DeskApp.jar"
