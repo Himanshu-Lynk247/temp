@@ -1,6 +1,6 @@
 @echo off
 
-REM Set the installation directory and other paths
+REM Set the installation directory and other pathss
 SET "INSTALL_DIR=C:\Program Files\Lynk247"
 SET "EXE_NAME=Lynk247.exe"
 SET "JSON_NAME=version.json"
