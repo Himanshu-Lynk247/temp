@@ -2,5 +2,5 @@
   "version": "2.0.0.0",
   "downloadUrl": "https://your-server-or-github-url/update.jar",
   "configUrl": "https://your-server-or-github-url/config",
-  "isUpdated":"true"
+  "isUpdated":true
 }
