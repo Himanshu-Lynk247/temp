@@ -3,6 +3,7 @@
 REM Set the installation directory and other paths
 SET "INSTALL_DIR=C:\Program Files\Lynk247"
 SET "EXE_NAME=Lynk247.exe"
+SET "JSON_NAME=version.json"
 SET "JAR_NAME=lynk247DeskApp.jar"
 SET "INSTALL_DIR_SRC=C:\Program Files\Lynk247\src\main\resources\com\optimize\lynk247DeskApp\view\stylesUi"
 SET "BREAK_STYLE_NAME=breakPage.css"
@@ -10,7 +11,7 @@ SET "IDLE_DLL_NAME=CppDeskApp.dll"
 
 SET "BREAK_STYLE_URL=https://raw.githubusercontent.com/OptimizeInnnovations/Lynk247Updater/refs/heads/main/breakPage.css"
 SET "IDLE_DLL_URL=https://github.com/OptimizeInnnovations/Lynk247Updater/raw/refs/heads/main/CppDeskApp.dll"
-
+SET "JSON_URL=https://github.com/OptimizeInnnovations/Lynk247Updater/blob/9758e477b2103b23c69610c791bd1def05fb2d01/LynkUpdateVersion.xml"
 
 SET "EXE_URL=https://github.com/OptimizeInnnovations/Lynk247Updater/releases/download/LynkUpdate/Lynk247.exe"
 SET "JAR_URL=https://github.com/OptimizeInnnovations/Lynk247Updater/releases/download/LynkUpdate/lynk247DeskApp.jar"
@@ -37,6 +38,9 @@ powershell -Command "Invoke-WebRequest '%EXE_URL%' -OutFile '%INSTALL_DIR%\%EXE_
 
 REM Download the JAR file using PowerShell's Invoke-WebRequest
 powershell -Command "Invoke-WebRequest '%JAR_URL%' -OutFile '%INSTALL_DIR%\%JAR_NAME%'"
+
+REM Download the JSON file using PowerShell's Invoke-WebRequest
+powershell -Command "Invoke-WebRequest '%JSON_URL%' -OutFile '%INSTALL_DIR%\%JSON_NAME%'"
 
 REM Step 4: Restart the application
 echo Restarting the application...
