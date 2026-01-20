@@ -42,6 +42,7 @@ powershell -Command "Invoke-WebRequest '%JSON_URL%' -OutFile '%INSTALL_DIR%\%JSO
 
 REM Step 4: Restart the application
 echo Restarting the application...
-start "" /D "%INSTALL_DIR%" "%EXE_NAME%"
+runas /trustlevel:0x20000 "%INSTALL_DIR%\%EXE_NAME%"
+
 REM Step 5: Exit the batch file
 exit
