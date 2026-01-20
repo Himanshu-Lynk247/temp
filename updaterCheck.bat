@@ -44,7 +44,10 @@ powershell -Command "Invoke-WebRequest '%JSON_URL%' -OutFile '%INSTALL_DIR%\%JSO
 
 REM Step 4: Restart the application
 echo Restarting the application...
-"%INSTALL_DIR%\%EXE_NAME%"
+cd /d "%INSTALL_DIR%"
+"%INSTALL_DIR%\Lynk247.exe"
+exit /b 0
+
 
 REM Step 5: Exit the batch file
 exit
